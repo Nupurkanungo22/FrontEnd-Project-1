@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="band.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us Page</title>
+    <style>
+        .demo-wrap{
+    background: #000 url(assets/Images/about-2.jpg);
+    /* background-repeat: no-repeat; */
+    color: #fff;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+.color-overlay{
+    width: 100%;
+    height: 300px;
+    background: rgb(11, 100, 160);
+    opacity: .8;
+    position: absolute;
+    border: 1px solid black;
+}
+.demo-wrap h1{
+    font-family: 'Pacifico', 'cursive';
+    font-size: 40px;
+    z-index: 1;
+    margin-left: 150px;
+}
+.demo-wrap h3{
+    z-index: 1;
+    position: absolute;
+    width: 113px;
+    bottom: 113px;
+    height: 1px;
+    background: white;
+    margin-left: 150px;
+}
+/* Services */
+.serviceBox{
+	padding: 60px 0;
+	background-color: #dccbcb;
+}
+.serviceBox .serviceTitle{
+	text-align: center;
+	padding: 0 0 35px 0;
+}
+.serviceBox .serviceTitle h1{
+	color: #0346fb;
+	font-weight: 600;
+	padding-bottom: 15px;
+	position: relative;
+	height: fit-content;
+}
+.serviceBox .serviceTitle h1 span{
+	font-weight: 600;
+	color: whitesmoke;
+}
+.serviceBoxContent .puraBox{
+	border: 8px solid whitesmoke;
+	border-radius: 8px;
+	background: #8a90e9;
+	padding: 35px 40px 31px;
+	text-align: center;
+	margin-bottom: 23px;
+	box-shadow: 0 23px 14px rgb(0 0 0 / 27%);
+}
+.serviceBoxContent .puraBox .iconBox{
+	justify-content: center;
+	background-color:navy;
+	border-radius: 50%;
+	height: 78px;
+	width: 78px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.serviceBoxContent .puraBox .iconBox figure{
+	margin: 0;
+}
+.serviceBoxContent .puraBox h3{
+	font-size: 22px;
+	margin-top: 16px;
+	font-weight: 600;
+    color: black;
+}
+.serviceBoxContent .puraBox p{
+	color: black;
+	margin-top: 15px;
+	font-weight: 550;
+}
+.puraBox:hover{
+	border-radius: 8px solid black;
+	background: #F4F4F4;
+	/* border: rgba(231, 188, 153, 0.986); */
+	border: blue;
+}
+.puraBox:hover > .iconBox{
+	background: navy;
+}
+.serviceBoxContent .puraBox p:hover{
+	color: rgb(0, 70, 128);
+}
+    </style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <h1>Logo<span>Company Name</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right:2px; padding-right: 100px;">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-4 ">
+                    <a href="#"><img src="assets/Images/newspaper_icon.jpg" width="35px" style="margin-left: 28px;"></a>
+                    <a class="nav-link">Brand Feed</a>
+                </li>
+            </ul>
+            <a href="login.html"><button class="btn btn-primary me-3" type="submit" style="font-family: fantasy">Login</button></a>
+            <a href="signup.html"><button class="btn btn-primary me-3" type="submit" style="font-family: fantasy">Sign Up</button></a>
+            <a href="about.html"><button class="btn btn-outline-primary me-2" type="submit">About Us</button></a>
+        </div>
+        </div>
+    </nav>
+    <hr>
+    <!-- Background Image -->
+    <section style="padding-top: 12px;">
+        <div class="demo-wrap">
+          <h1><b>About Us</b></h1>
+          <h3></h3>
+          <div class="color-overlay"></div>
+        </div>
+    </section>
+    <!-- Service Cards -->
+    <section class="serviceBox">
+            <div class="container">
+              <div class="row">
+                <div class="serviceTitle">
+                  <h1><u>About</u><span>Us</span></h1>
+                </div>
+                <div class="serviceBoxContent row">
+                    <!-- Card-1 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-2 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-3 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                          <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-4 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-5 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-6 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-7 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <!-- Card-8 -->
+                  <div class="col-sm-3">
+                    <div class="puraBox">
+                      <div class="iconBox">
+                        <figure>
+                            <img src="assets/Images/about-card.png" width="40px">
+                        </figure>
+                      </div>
+                      <h3>Services First</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="brand-footer">
+        <div class="container">
+        <div class="row" style="padding-top: 50px; --bs-gutter-x:var(--bs-gutter-x)3.5rem">
+        <!-- Col 1 -->
+        <div class="col col-sm-3 col-md-3 col-lg-3 col-3">
+            <div class="footerheading">
+                <h6>Categories</h6>
+            </div>
+            <div class="footmenu">
+                <ul class="list-unstyled">
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Election Special</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Trending</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Bipin Rawat</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Canva Special</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Good Thoughts ( Suvichar )</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col col-sm-3 col-md-3 col-3">
+            <div class="footerheading">
+                <h6>Festival Special</h6>
+            </div>
+            <div class="footmenu">
+                <ul class="list-unstyled">
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Vijay Diwas</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Rohini Vrat</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">National Minorities Rights Day</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">International Migrants Day</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Guru Ghasidas Jayanti</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Dattatreya Jayanti</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Col 3 -->
+        <div class="col col-sm-3 col-md-3 col-3">
+            <div class="footerheading">
+                <h6>Custom Templates</h6>
+            </div>
+            <div class="footmenu">
+                <ul class="list-unstyled">
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Christmas Special</a></li>
+                    <p><i class="arrow"></i></p><li class="mb-2"><a href="#">Payment Thanks</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Col 4 -->
+        <div class="col col-sm-3 col-md-3 col-3">
+            <div class="footerheading">
+                <h6>Downloads</h6>
+            </div>
+            <div class="container">
+                <div class="container">
+                    <div class="row" style="padding-top:15px">
+                      <div class="col col-sm-6 col-md-6 col-lg-6 col-6" style="margin-left: -25px;">
+                        <figure>
+                            <a href="#"><img src="assets/Images/apple.png" width="110px" height="45px" style="margin-left: 30px;"></a>
+                        </figure>
+                      </div>
+                      <div class="col col-sm-6 col-md-6 col-lg-6 col-6">
+                        <figure>
+                            <a href="#" ><img src="assets/Images/google.png" width="110px" height="55px" style="margin-left: 33px; margin-top: -4px;"></a>
+                        </figure>
+                        <!-- Blog Button -->
+                        <button class="button" style="margin-left: -94px;">Blog</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        <div class="followButtons">
+            <h6>Follow Us:</h6>
+            <div class="icons" style="margin-right: 125px;">
+                <a href="#"><i class="fa fa-facebook-square circle" style="margin-left: 35px; color: blue;"></i></a>
+                <a href="#"><i class="fa fa-twitter circle"></i></a>
+                <a href="#"><i class="fa fa-instagram circle fa-5x" style="margin-left: 2px;"></i></a>
+                <a href="#"><i class="fa fa-youtube circle red-color"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Final Footer -->
+    <div class="container-fluid footerContent">
+        <div class="row" style="padding-top: 30px;">
+            <div class="col">
+                <center>
+                    <p>All Rights Reserved | © Copyright 2021</p>
+                </center>
+            </div>
+            <div class="col">
+                <center>
+                    <p>Terms | Privacy Policy | Faqs | Refer & Earn</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
